@@ -1,0 +1,23 @@
+[package]
+name = "solana-bpf-helloworld"
+version = "0.0.1"
+description = "Example template program written in Rust"
+authors = ["Author <>"]
+repository = "https://github.com/"
+edition = "2018"
+
+[features]
+no-entrypoint = []
+
+[dependencies]
+borsh = "1.2.0"
+borsh-derive = "1.2.0"
+solana-program = "~1.17.6"
+
+[dev-dependencies]
+solana-program-test = "~1.17.6"
+solana-sdk = "~1.17.6"
+
+[lib]
+name = "helloworld"
+crate-type = ["cdylib", "lib"]

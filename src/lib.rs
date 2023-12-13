@@ -131,12 +131,25 @@ mod test {
     use solana_sdk::account;
     use std::mem;
 
+    #[derive(BorshSerialize, BorshDeserialize)]
+    struct MockRent {
+        lamports_per_byte_year: u64,
+        exemption_threshold: f64,
+        burn_percent: u8,
+    }
+
     #[test]
     fn test_sanity() {
         let program_id = Pubkey::default();
         let key = rent::id();
         let mut lamports = 0;
-        let mut data = // vec![0; mem::size_of: ;
+        let mock_rent = MockRent {
+            lamports_per_byte_year: 3, // example value
+            exemption_threshold: 2.0, // example value
+            burn_percent: 10, // example value
+        };
+        let serialized_rent = mock_rent.try_to_vec().unwrap();
+        let mut data = serialized_rent; // Now data contains a serialized Rent object        
         let owner = Pubkey::default();
         let account = AccountInfo::new(
             & key,

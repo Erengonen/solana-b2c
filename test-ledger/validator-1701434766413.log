@@ -1,0 +1,12 @@
+[0m[38;5;8m[[0m2023-12-01T12:46:06.414641000Z [0m[32mINFO [0m solana_test_validator[0m[38;5;8m][0m solana-validator 1.8.6 (src:e5aa5efb; feat:591501692)
+[0m[38;5;8m[[0m2023-12-01T12:46:06.414701000Z [0m[32mINFO [0m solana_test_validator[0m[38;5;8m][0m Starting validator with: ArgsOs {
+        inner: [
+            "solana-test-validator",
+        ],
+    }
+[0m[38;5;8m[[0m2023-12-01T12:46:06.415112000Z [0m[33mWARN [0m solana_perf[0m[38;5;8m][0m CUDA is disabled
+[0m[38;5;8m[[0m2023-12-01T12:46:06.438463000Z [0m[32mINFO [0m solana_faucet::faucet[0m[38;5;8m][0m Faucet started. Listening on: 0.0.0.0:9900
+[0m[38;5;8m[[0m2023-12-01T12:46:06.438496000Z [0m[32mINFO [0m solana_faucet::faucet[0m[38;5;8m][0m Faucet account address: AdPzBdru5KxDmtnXw7FW9ME7HMgGKksPqiAoaR9guSrH
+[0m[38;5;8m[[0m2023-12-01T12:46:06.449321000Z [0m[32mINFO [0m solana_ledger::blockstore[0m[38;5;8m][0m Maximum open file descriptors: 500000
+[0m[38;5;8m[[0m2023-12-01T12:46:06.449563000Z [0m[32mINFO [0m solana_ledger::blockstore[0m[38;5;8m][0m Opening database at "test-ledger/rocksdb"
+[0m[38;5;8m[[0m2023-12-01T12:46:06.687099000Z [0m[32mINFO [0m solana_ledger::blockstore[0m[38;5;8m][0m "test-ledger/rocksdb" open took 237ms
